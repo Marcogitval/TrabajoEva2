@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/estilos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Inicio de mi codificacion -->
+    <div class="container">
+        <!-- Inicio del menú de navegación -->
+        <nav class="navbar navbar-expand-lg" style="padding-left: 10%; background-color: #004080;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <a href="index.html">
+                <img src="imagenes/LogoRedondo.png" id="logotipo">
+              </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 10%;">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" style="color: #D0D0D0" href="index.html">Club de Rayuela</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" style="color: #D0D0D0" href="login.html">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" style="color: #D0D0D0" href="galeria.html">Galería</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- Término del menú de navegación -->
+      <!-- Inicio de imagen general-->
+      <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 10px; margin-bottom: 10px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/bannerGaleria1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="background-color: #004080">Bienvenido a nuestro Catálogo.</h5>
+              <p style="background-color: #003366">Acá puedes revisar los productos que tenemos disponibles para ti,
+              ¡todas las semanas tenemos un nuevo producto para que puedas revisar! Ven y lleva lo que quieras en la cantidad que quieras.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/bannerGaleria2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="background-color: #004080">Tus compras están protegidas.</h5>
+              <p style="background-color: #003366">Tu información bancaria y datos de Inicio de Sesión están 100% protegidos, si tienes alguna duda
+                o inquietud, no dudes en contactar a nuestro Soporte Técnico para mayor seguridad.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Término de imagen general-->
+      <!-- Inicio galería -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card" style="background-color: #003366; color: #D0D0D0; margin-top: 10px; margin-bottom: 10px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Tejo Acero Inoxidable 19cm de alto (par)</h5>
+              <p class="card-text" style="text-align: center;">Precio: $18.990</p>
+                <img src="imagenes/tejos.png" class="card-img-top" alt="..." style="padding: 20px; margin-top: -20px;">
+              <div class="producto-info">
+                Cantidad: <input type="number" name="cantidad" min="1" class="cantidad-input">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="background-color: #003366; color: #D0D0D0; margin-top: 10px; margin-bottom: 10px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Estacas de madera (25 un.)</h5>
+              <p class="card-text" style="text-align: center;">Precio: $13.550</p>
+                <img src="imagenes/Estacas.jpg" class="card-img-top" alt="..." style="padding: 20px; margin-top: -20px;">
+              <div class="producto-info">
+                Cantidad: <input type="number" name="cantidad" min="1" class="cantidad-input">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="background-color: #003366; color: #D0D0D0; margin-top: 10px; margin-bottom: 10px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Saco de Arena (25kg)</h5>
+              <p class="card-text" style="text-align: center;">Precio: $6.990</p>
+                <img src="imagenes/Saco.jpg" class="card-img-top" alt="..." style="padding: 20px; margin-top: -20px;">
+              <div class="producto-info">
+                Cantidad: <input type="number" name="cantidad" min="1" class="cantidad-input">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="background-color: #003366; color: #D0D0D0; margin-top: 10px; margin-bottom: 10px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Plataforma de madera para Rayuela</h5>
+              <p class="card-text" style="text-align: center;">Precio: $20.930</p>
+                <img src="imagenes/plataforma.jpg" class="card-img-top" alt="..." style="padding: 20px; margin-top: -20px;">
+              <div class="producto-info">
+                Cantidad: <input type="number" name="cantidad" min="1" class="cantidad-input">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="background-color: #003366; color: #D0D0D0; margin-top: 10px; margin-bottom: 10px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Chupalla (Talla única)</h5>
+              <p class="card-text" style="text-align: center;">Precio: $32.190</p>
+                <img src="imagenes/chupalla.png" class="card-img-top" alt="..." style="padding: 20px; margin-top: -20px;">
+              <div class="producto-info">
+                Cantidad: <input type="number" name="cantidad" min="1" class="cantidad-input">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="background-color: #003366; color: #D0D0D0; margin-top: 10px; margin-bottom: 10px;">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Tejos Acero Inoxidable 2cm de alto (par)</h5>
+              <p class="card-text" style="text-align: center;">Precio: $9.990</p>
+                <img src="imagenes/tejos2.png" class="card-img-top" alt="..." style="padding: 20px; margin-top: -20px;">
+              <div class="producto-info">
+                Cantidad: <input type="number" name="cantidad" min="1" class="cantidad-input">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Término galería-->
+      <!-- Inicio de footer-->
+      <nav class="navbar navbar-expand-lg" style="background-color: #004080;">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="navbar-brand" href="index.html">
+                <h6 class="text-center mb-0" style="color: #D0D0D0;">Asignatura: Programación Front End</h6>
+            </a>
+        </div>
+    </nav>
+      <!-- Término de footer-->
+    <!-- Término de mi codificación -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

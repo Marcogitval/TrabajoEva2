@@ -1,0 +1,28 @@
+#logotipo{
+    width: 7rem;
+}
+
+#parrafo{
+    text-align: center;
+}
+
+body{
+    background-image:url("../imagenes/fondonew.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}    
+
+.producto-info {
+    margin-top: -5px;
+    text-align: center;
+}
+
+.cantidad-input {
+    width: 65px; 
+    padding: 8px;
+    margin-top: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    font-size: 20px;
+}
